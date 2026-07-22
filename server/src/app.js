@@ -40,6 +40,8 @@ app.use('/api/security', require('./routes/security.routes'))
 app.use('/api/dashboard', require('./routes/dashboard.routes'))
 app.use('/api/visitor', require('./routes/visitor.routes'))
 app.use('/api/announcements', require('./routes/announcement.routes'))
+app.use('/api/admin', require('./routes/admin.routes'))
+
 
 app.use((err, req, res, next) => {
   console.error('GLOBAL ERROR:', err.message)
